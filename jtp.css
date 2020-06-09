@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+body
+{
+    font-family: "Open Sans", Arial, sans-serif;
+    line-height:2;
+    font-size:1.25em;
+    color:black;
+    background-color:whitesmoke;
+    
+}
+#navbar
+{
+    position:fixed;
+    top:0px;
+    left:0px;
+    border-right:10px none gray;
+    min-width: 350px;
+    width:350px;
+    height:100%;
+}
+#navbar header
+{
+    font-size:1.75em;
+    color:maroon;
+    text-align: center;
+    text-shadow: 2px 2px 5px ;
+    border-right:15px solid lightgray;
+}
+
+#navbar ul
+{
+    padding:0px;/*state padding to zero to over write padding-inline-start*/
+    margin-top: 0px;
+    height: 680px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+}
+
+#navbar li
+{
+    list-style: none;
+    width: 90%;
+    position: relative;
+    border: 10px solid grey;
+    padding-left:20px;
+}
+.nav-link
+{
+    text-decoration: none;
+    color:crimson;
+}
+.nav-link:hover
+{
+    letter-spacing:1;
+    font-weight: 400;
+    color:firebrick;
+    text-shadow: 2px 2px 5px black;
+    transition: 0.2s;
+}
+
+/* css for main */
+#main-doc
+{
+    position:absolute;
+    margin-left: 375px;
+    margin-right: 10px;   
+    
+}
+
+#main-doc header
+{
+    font-weight: bolder;
+    font-size:1.5em;
+    color:crimson;
+    padding-left: 25px;
+}
+
+#main-doc article
+{
+    margin: 0px 5px 50px 50px;
+    font-size:0.96em;
+    line-height:1.75;
+    color: #4d4e53;
+}
+
+#main-doc li
+{
+    line-height: 2;
+}
+code
+{
+    display: block;
+    line-height: 2;
+    background-color: lavender;
+    padding: 15px;
+    margin:20px;
+    border-radius: 5px;
+    word-break: normal;
+    white-space: pre;
+}
+   
+
+@media only screen and (max-width: 815px) {
+    /* For mobile phones: */
+     
+    #navbar
+    {
+        position:absolute;
+        width:100%;
+        background-color:;
+        z-index:1;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        max-height: 275px;
+       
+    }
+    #navbar header
+    {
+        font-size:2em;
+        border:none;
+    }
+
+    #navbar ul
+    {
+        height:125px;
+        margin-right:0px;
+    }
+
+    #navbar li
+    {
+        width:95%;      
+    }
+
+    #main-doc
+    {
+        position:relative;
+        width:100%;
+        margin-left:0px;
+        margin-top:270px;
+    }
+
+
+   
+}   
